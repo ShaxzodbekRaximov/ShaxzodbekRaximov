@@ -1,0 +1,10 @@
+let answers=[];
+let question=[
+    'Ismingiz nima?',
+    'Familiyangiz nima?',
+    'Yoshingiz nechida?',
+]
+for (let i = 0; i < question.length; i++) {
+    answers[i] = prompt(question[i]);
+    
+}
