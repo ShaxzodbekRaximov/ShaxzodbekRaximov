@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jquery-ui-1.13.0.custom/jquery-ui-1.13.0.custom/jquery-ui.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="jquery-ui-1.13.0.custom/jquery-ui-1.13.0.custom/jquery-ui.js"></script>
+  <style>
+    .container{
+    height: 1200px;
+    background-color: bisque;
+    margin-top: 20px;
+}
+.burchakli-sahifa{
+    position: fixed;
+    margin-top: -300px;
+    border-radius: 10px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornsilk;
+    color: black;
+}
+.chiqish{
+    border-radius: 0 10px 0 10px;
+    margin-left: 264px;
+}
+.header-top{
+    position: absolute;
+    display: none;
+    margin: 50px 0 0 400px;
+    border-radius: 10px;
+    width: 600px;
+    height: 640px;
+    border: 1px solid  black;
+}
+.email-manzil{
+    margin: 40px 0 0 10px;
+}
+.umumiy{
+    margin-left: 200px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.dasturlash{
+    color: rgba(0, 0, 0, 0.459);
+}
+.chiqish1{
+    position: absolute;
+    margin-left: 564px;
+    border-radius: 0 10px 0 10px;
+}
+.top{
+    background-color: black;
+    color: white;
+    width: 102.2%;
+    height: 40px;
+    margin-left: -1%;
+    
+}
+.teng{
+    position: absolute;
+    margin-top: -33px;
+    font-size: 70px;
+    font-weight: 800;
+    margin-left: 1050px;
+}
+.header-qism{
+    margin:-33px 0 0 500px;
+}
+.header{
+    height: 300px;
+    margin: 30px 0 0 400px;
+    padding-left: 50px;
+}
+.foto{
+    width: 600px;
+    margin: 80px 0 0 0;
+}
+.foto1, .foto2, .foto3, .foto4{
+    display: none;
+}
+  </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container border border-dark">
+        
+        <div class="top">
+            <h1 class="teng">=</h1>
+        </div>
+        <div class="header border border-dark">
+            <label for="r1">Foto1</label>
+            <input type="radio" name="radio" id="r1">
+            <label for="r2">Foto2</label>
+            <input type="radio" name="radio" id="r2">
+            <label for="r3">Foto3</label>
+            <input type="radio" name="radio" id="r3">
+            <label for="r4">Foto4</label>
+            <input type="radio" name="radio" id="r4">
+            <div class="header-qism">
+                <label for="checed1">Ok</label>
+                <input type="checkbox" name="checed1" id="checed1">
+            </div>
+
+            <div class="foto row">
+                <div class="col-3">
+                    <img src="img/15. Облака.jpg" class="img-thumbnail foto1" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/16. Город.jpg" class="img-thumbnail foto2" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/17. Мост.jpg" class="img-thumbnail foto3" alt="">
+                </div>
+                <div class="col-3">
+                    <img src="img/18. Замок Химэдзи.jpg" class="img-thumbnail foto4" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="header-top">
+            <div class="chiqish1 btn btn-dark">X</div>
+            <form action="index.html">
+                <div class="email-manzil">
+                    <label for="ism" class="umumiy">Ismingizni kiriting</label> <br>
+                    <input type="text" name="ism" id="ism" class="form-control" ><br>
+                    <label for="fam" class="umumiy">Familiyangizni kiriting</label><br>
+                    <input type="text" name="fam" id="fam" class="form-control"><br>
+                    <label for="mail" class="umumiy">Email kiriting</label><br>
+                    <input type="email" name="mail" id="mail" class="form-control"><br>
+                    <label for="ism" class="umumiy">Parolingizni kiriting</label><br>
+                    <input type="password" name="pas" id="pas" class="form-control"><br>              
+                </div>
+                <div class="yosh text-center">
+                    <h3><i style="color: rgba(0, 0, 0, 0.561); ">Yoshingizni tanlang</i></h3>
+                    <label for="radio">15-18</label>
+                    <input type="radio" name="radio" id="radio">
+                    <label for="radio1">19-25</label>
+                    <input type="radio" name="radio" id="radio1">
+                    <label for="radio2">26-30</label>
+                    <input type="radio" name="radio" id="radio2">
+                </div>
+                <div class="dasturlash text-center">
+                    <h3><i>Qanday dasturlarni bilasiz</i></h3>
+                    <label for="chec1">Android</label>
+                    <input type="checkbox" name="chec1" id="chec1">
+                    <label for="chec2">Web developer</label>
+                    <input type="checkbox" name="chec2" id="chec2">
+                    <label for="chec3">PHP</label>
+                    <input type="checkbox" name="chec3" id="chec3">
+                    <label for="chec4">Java</label>
+                    <input type="checkbox" name="chec4" id="chec4">
+                    <label for="chec5">Android</label>
+                    <input type="checkbox" name="chec5" id="chec5">
+                    <br>
+                    <br>
+                    <input type="reset" value="Qayta yuklash" class="btn btn-danger">
+                    <input type="submit" value="O'tish" class="btn btn-info">
+                </div>
+            </form>
+        </div>
+        <div class="burchakli-sahifa" title="Kopyuter injineringi">
+            <button class="chiqish btn btn-dark" >X</button>
+            <h4 class="text-center">Kopyuter injineringi</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quis nobis rem dolor modi nihil labore totam sit qui maxime officia deleniti iure fuga cupiditate sequi accusantium, id commodi architecto?</p>
+        </div>
+      <script>
+        $(document).ready(function(){
+    $(".chiqish").click(function(){
+        $(".burchakli-sahifa").hide("slow");
+    });
+    $("#radio, #radio1, #radio2, #chec1, #chec2, #chec3, #chec4, #chec5, #r1, #r2, #r3, #r4, #checed1").checkboxradio();
+    $(".chiqish1").click(function(){
+        $(".header-top").slideUp();
+        $(".teng, .top, .header").slideDown();
+
+    })
+    $(".teng").click(function(){
+        $(".header-top").slideDown();
+        $(".teng, .top, .header").slideUp();
+    })
+    $("#checed1").click(function(){
+        $(".foto1, .foto2, .foto3, .foto4").toggle(1000);
+    })
+    $("#r1").click(function(){
+        $(".foto1").toggle(1000);
+    })
+    $("#r2").click(function(){
+        $(".foto2").toggle(1000);
+    })
+    $("#r3").click(function(){
+        $(".foto3").toggle(1000);
+    })
+    $("#r4").click(function(){
+        $(".foto4").toggle(1000);
+    })
+})
+      </script>
+    </div>
+</body>
+</html>
